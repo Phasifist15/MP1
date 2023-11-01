@@ -1,58 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Trident Hydro</title>
 </head>
-
 <body>
-    <nav class="navbar">
 
-        <div class="logo">
+    <!--Navigation Bar-->
+    
+    <header>
 
-            <a href="#"><img src="images/trident logo.png" alt="Trident Logo" id="logo"></a>
+        <div class="container container-nav">
 
-        </div>
+            <div class="logo">
+                <h2><a href="index.html" id="logo1"><span id="trident">Trident</span> <span id="hydro">Hydro</span></a></h2>
+            </div>
 
-        <ul class="nav1">
+            <div class="topnav">
 
-            <input type="checkbox" id="ham" />
-            <label for="ham" class="hamburger">&#9776;</label>
+                <nav>
 
-            <div class="menu">
+                    <ul>
 
-                <li><a href="#" id="home">Home</a></li>
-
-                <li class="about">
-                    
-                    <a href="#">About</a>
-                
-                    
-                    <ul class="dropdown">
-
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">What We Do</a></li>
-                        <li><a href="#">Our Branches</a></li>
-                        <li><a href="#">Mission</a></li>
-                        <li><a href="#">Vision</a></li>
+                        <li><a href="index.html" class="current">Home</a></li>
+                        <li><a href="#" class="about">About Us</a></li>
+                        <li><a href="#" class="services">Products & Services</a></li>
+                        <li><a href="#" class="group">Our Group</a></li>
+                        <li><a href="#" class="contacts">Contacts</a></li>
 
                     </ul>
 
-                </li>
-
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
+                </nav>
 
             </div>
 
-        </ul>
+        </div>
 
-    </nav>
+        
+        <div class="intro">
+
+            <h1><span id="trident">Trident</span> <span id="hydro">Hydro</span></h1>
+            <p>offers <span class="engg">ENGINEERING SERVICES</span> on shipyards, power plants, and oil and gas companies not just in the Philippines but for</p>
+            <p id="intro-countries"> 6 OTHER COUNTRIES!</p>
+            <a href="#section1" id="scroll-key" title="Next">&#11191;</a>
+
+        </div>
+
+    </header>
+
+    <section class="section1" id="section1">
+
+        <article>
+
+            <div class="title1">
+
+                <h1>Products and Services</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex rem dolore hic ad, accusamus ab?</p>
+
+            </div>
+
+        </article>
+        <article>
+
+            <div class="catalog-services">
+
+                <div class="catalog-services1 card1">
+                    <img src="images/ex1.webp" alt="exchanger">
+                        <div class="catalog-services-title services-title1">
+                            <h1 class="exchanger">Heat Exchanger Fabrication</h1>
+                            <button class="read-more">Read More</button>
+                        </div>
+                </div>
+
+                <div class="catalog-services2 card2">
+                    <img src="images/tank1.jpg" alt="tank">
+                        <div class="catalog-services-title services-title2">
+                            <h1 class="tank">Product Tank Cleaning</h1>
+                            <button class="read-more">Read More</button>
+                        </div>
+                </div>
+
+                <div class="catalog-services3 card3">
+                    <img src="images/hpj1.webp" alt="hpj">
+                        <div class="catalog-services-title services-title3">
+                             <h1 class="hpj">Heat Exchanger Fabrication</h1>
+                            <button class="read-more">Read More</button>
+                        </div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
 
 </body>
-
 </html>
