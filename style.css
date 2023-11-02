@@ -61,7 +61,6 @@ nav a {
 }
 
 nav a:hover {
-  transition: 0.5s;
   text-decoration: underline orange;
 }
 
@@ -97,15 +96,24 @@ nav a:hover {
   margin-bottom: 1.75em;
 }
 
-#scroll-key {
-  text-decoration: none;
-  text-align: center;
-  color: cyan;
-  font-size: 3.5em;
+.scroll-key {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: orange;
+  background-color: rgb(45, 41, 41);
 }
 
-#scroll-key:hover {
+.scroll-key a {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
   color: orange;
+  font-weight: bold;
+}
+
+.scroll-key a:hover {
+  color: cyan;
 }
 
 
@@ -120,7 +128,7 @@ nav a:hover {
   }
 
   .intro {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .intro h1 {
@@ -128,12 +136,12 @@ nav a:hover {
   }
 
   .intro p {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0.25em;
   }
 
   .engg {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .container-nav {
@@ -170,6 +178,15 @@ nav a:hover {
 
 @media (min-width: 1025px) {
 
+  header {
+    width: 100%;
+    max-width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery1.jpg');
+    position: relative;
+    background-size: cover;
+  }
+
   .container-nav {
     display: flex;
     justify-content: space-between;
@@ -201,9 +218,25 @@ nav a:hover {
     border-right: 2px solid white;
     padding-right: 1em;
   }
+
+  .scroll-key {
+    margin-top: 8%;
+    border: 3px solid orange;
+  }
+
+  .scroll-key a {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media (min-width: 2000px) {
+
+  header {
+    width: 100%;
+    max-width: 100%;
+    height: 1378px;
+  }
   .container-nav {
     display: flex;
     justify-content: space-between;
@@ -245,6 +278,44 @@ nav a:hover {
   .contacts {
     padding-left: 1em;
   }
+
+  .intro {
+    text-align: center;
+    padding: 15% 2em;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .intro h1{
+    margin-bottom: 0.5rem;
+    font-size: 2.5em;
+  }
+  
+  .intro p {
+    font-size: 1.5em;
+  }
+  
+  .engg {
+    font-weight: bolder;
+  }
+  
+  #intro-countries {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: orange;
+    margin-bottom: 1.75em;
+  }
+
+  .scroll-key {
+    margin-top: 10%;
+    border: 3px solid orange;
+    border-radius: 8px;
+  }
+
+  .scroll-key a {
+    font-size: 2.5rem;
+  }
+  
 }
 
 /* =============
@@ -253,15 +324,27 @@ nav a:hover {
 
   /* Cards for Products and Services */
 
+.title1{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.title1 h1{
+  font-size: 2.5rem;
+}
+
+.title1 p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 .catalog-services {
   width: 100%;
-  object-fit: cover;
 }
 
 .catalog-services img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin-bottom: 1.5em;
 }
 
@@ -273,7 +356,7 @@ nav a:hover {
   border: 7px solid orange;
   position: relative;
   object-fit: cover;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   text-align: center;
 }
 
@@ -281,34 +364,20 @@ nav a:hover {
   bottom: 0;
 }
 
-.catalog-services-title {
-  width: 100%;
-  height: 100%;
-  bottom: -110%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(2px);
-  color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1.5s;
-  border-radius: 8px;
-}
-
-.card1 .exchanger {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card1 .read-more {
+.read-more {
   margin: 0 auto;
   text-align: center;
-  border-radius: 5px;
-  margin-top: 10%;
+  border-radius: 10px;
+  background-color: rgb(45, 41, 41);
+  padding: 0.5rem;
+  font-weight: bold;
+  color: orange;
+  border-color: orange;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.read-more:hover {
+  color: cyan;
 }
 
 /* Card 2 */
@@ -317,35 +386,6 @@ nav a:hover {
   bottom: 0;
 }
 
-.catalog-services-title {
-  width: 100%;
-  height: 100%;
-  bottom: -110%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(2px);
-  color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1.5s;
-  border-radius: 8px;
-}
-
-.card2 .tank {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card2 .read-more {
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 5px;
-  margin-top: 10%;
-}
 
 /* Card 3 */
 
@@ -369,36 +409,79 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.card3 .hpj {
+.services-title1, .services-title2, .services-title3 {
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
 
-.card3 .read-more {
-  margin: 0 auto;
+.exchanger, .tank, .hpj {
+  margin-bottom: 30%;
+}
+
+.here {
   text-align: center;
-  border-radius: 5px;
-  margin-top: 10%;
+}
+
+.here a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 5rem 1.5rem;
+  color: rgb(45, 41, 41);
+  font-weight: bold;
+}
+
+.here a:hover {
+  color: orange;
 }
 
 /* Media Queries for Catalogue of Services */
 
-@media (min-width: 769px;) {
+@media (min-width: 769px) {
+
   .catalog-services {
+    max-width: 90%;
+    max-height: 100%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
+
+  .card1, .card2, .card3 {
+    margin: 1.5rem 2rem;
+  }
+
+  .exchanger, .tank, .hpj {
+    margin-bottom: 30%;
+  }
+}
+
+@media (min-width: 2000px) {
+
   .catalog-services1, .catalog-services2, .catalog-services3 {
-    width: 30%;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 7px solid orange;
-    position: relative;
-    object-fit: cover;
+    height: 650px;
   }
+
+  .title1 h1 {
+    font-size: 5rem;
+  }
+
+  .title1 p {
+    font-size: 3em;
+  }
+
+  .services-title1, .services-title2, .services-title3 {
+    font-size: 2.8rem;
+  }
+
+  .read-more {
+    font-size: 2rem;
+  }
+
 }
