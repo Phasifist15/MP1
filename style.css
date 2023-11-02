@@ -324,17 +324,17 @@ nav a:hover {
 
   /* Cards for Products and Services */
 
-.title1{
+.title{
   text-align: center;
   margin: 2rem auto;
 }
 
-.title1 h1{
-  font-size: 2.5rem;
+.title h1{
+  font-size: 2rem;
 }
 
-.title1 p {
-  font-size: 1.5rem;
+.title p {
+  font-size: 1.25rem;
   padding: 1rem;
 }
 
@@ -424,13 +424,13 @@ nav a:hover {
 
 .here {
   text-align: center;
+  padding: 0.5rem;
+  margin: 3em 1.5rem;
 }
 
 .here a {
   text-decoration: none;
   font-size: 1.25rem;
-  padding: 0.5rem;
-  margin: 5rem 1.5rem;
   color: rgb(45, 41, 41);
   font-weight: bold;
 }
