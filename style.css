@@ -477,9 +477,6 @@ nav a:hover {
 
 @media (min-width: 2000px) {
 
-  .catalog-services1, .catalog-services2, .catalog-services3 {
-    height: 650px;
-  }
 
   .title1 h1 {
     font-size: 5rem;
@@ -533,8 +530,8 @@ footer {
 
 .copyright .copy {
   color: white;
-  font-weight: bold;
   padding-bottom: 1.5rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 768px) {
