@@ -132,9 +132,230 @@
       }
 
   }
+
+  @media (min-width: 2000px) {
+
+    .logo {
+      font-size: 3.5rem;
+    }
+
+    nav ul {
+      font-size: 2.5em;
+    }
+
+    .contacts {
+      margin-top: 5%;
+    }
+    
+    .contacts h1 {
+      font-size: 4.5rem;
+    }
+
+  }
   
   
+  /* CONTENT */
+
+  section {
+    background-color: rgba(4, 9, 30, 0.85);
+  }
+
+  .maps {
+    text-align: center;
+  }
+
+  .maps #gmaps {
+    border-radius: 10px;
+    border: 5px solid orange;
+    margin: 2rem;
+    width: 250px;
+  }
+
+  .primary-contacts {
+    width: 90%;
+    margin: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+  }
+
+  .whattsapp, .telephone, .email {
+    width: 100%;
+    display: flex;
+  }
+
+  .whattsapp i {
+    padding-right: 1.5rem;
+    font-size: 2.5rem;
+    color: orange;
+  }
+
+  .telephone i, .email i {
+    padding-right: 1.76rem;
+    font-size: 2rem;
+    color: orange;
+  }
+
+  .contact p {
+    font-size: .8rem;
+    padding-top: .3rem;
+  }
+
+  /* INQUIRY FORM */
+
+  .inquiry {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .inquiry h3 {
+    color: snow;
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    border-radius: 5px;
+    border: 5px groove orange;
+    background-color: transparent;
+    color: snow;
+  }
+
+  form input {
+    width: 100%;
+    height: 1.5rem;
+  }
+
+  form #comments {
+    width: 100%;
+    height: 200px;
+  }
+
+  input:placeholder-shown {
+    text-align: center;
+    color: cyan;
+  }
+
+  #comments:placeholder-shown {
+    text-align: center;
+    color: snow;
+  }
+
+  form .submit {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    font: 1.5rem bold;
+    background-color: transparent;
+    color: orange;
+    border: 2px solid orange;
+    transition: .5s;
+  }
+
+  .submit:hover {
+    background-color: cyan;
+    transform: scale(1.2);
+  }
+
+  @media (min-width: 768px) {
+
+    .maps #gmaps {
+      width: 90%;
+      height: 400px;
+    }
+
+    .article2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .article2 .contact {
+      width: 90%;
+    }
+
+    .article2 .inquiry {
+      width: 90%;
+    }
+
+    .primary-contacts h3 {
+      font-size: 1.5rem;
+    }
+
+    .primary-contacts p {
+      font-size: 1rem;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
+
+    .maps #gmaps {
+      height: 550px;
+    }
+
+    form input {
+      height: 3rem;
+    }
   
+    form #comments {
+      height: 250px;
+    }
+
+    .inquiry input, textarea {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media (min-width: 2000px) {
+    .maps #gmaps {
+      height: 700px;
+    }
+
+    .primary-contacts h3 {
+      font-size: 2.25rem;
+    }
+
+    .primary-contacts p {
+      font-size: 1.75rem;
+    }
+
+    .contact, .inquiry {
+      width: 90%;
+    }
+
+    .primary-contacts .contact {
+      width: 85%;
+      font-size: ;
+    }
+
+    .article2 h3, form {
+      width: 92%;
+    }
+
+    .primary-contacts h3 {
+      font-size: 3.5rem;
+    }
+
+    .primary-contacts p {
+      font-size: 3.5rem;
+    }
+
+    .primary-contacts i {
+      font-size: 5rem;
+    }
+
+    form input {
+      height: 3.5rem;
+    }
+  
+    form #comments {
+      height: 250px;
+    }
+
+  }
+
   
   
   /* =============
