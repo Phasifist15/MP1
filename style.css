@@ -1,299 +1,168 @@
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  width: 100%;
-  max-width: 100%;
-  height: 700px;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery1.jpg');
-  position: relative;
-  background-size: cover;
-}
-
-/* Navigation Bar */
-
-.container-nav {
-  max-width: 100%;
-  padding-top: 1.5rem;
-  margin: 0 auto;
-}
-
-.logo {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-#logo1 {
-  text-decoration: none;
-}
-
-#trident {
-  color: orange;
-}
-
-#hydro {
-  color: cyan;
-}
-
-.topnav {
-  margin-bottom: 0.5em;
-}
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  font-size: 1.125em;
-  font-weight: bold;
-}
-
-nav li {
-  padding: 0.5rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: solid;
-}
-
-nav a:hover {
-  color: cyan;
-}
-
-.current {
-  text-decoration: underline orange;
-}
-
-/* Introduction Paragraph */
-
-.intro {
-  text-align: center;
-  padding: 15% 2em;
-  color: white;
-  font-size: 1rem;
-}
-
-.intro h1{
-  margin-bottom: 0.5rem;
-}
-
-.intro p {
-  font-size: 1.5em;
-}
-
-.engg {
-  font-weight: bolder;
-}
-
-#intro-countries {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: orange;
-}
-
-.scroll-key {
-  margin: 2rem auto;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  border-color: orange;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.scroll-key a {
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  color: orange;
-  font-weight: bold;
-}
-
-.scroll-key a:hover {
-  color: cyan;
-}
-
-
-/* Media Queries for Header */
-
-@media (min-width: 769px) {
-  header {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 620px;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
   }
 
-  .intro {
-    font-size: 2rem;
-  }
+  /* Navigation Bar */
 
-  .intro h1 {
-    margin-bottom: 0.25em;
-  }
-
-  .intro p {
-    font-size: 1.5rem;
-    margin-bottom: 10%;
-  }
-
-  .engg {
-    font-size: 1.5em;
-  }
-
-  .container {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding-bottom: 1em;
-  }
-
-  .container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .topnav {
-    padding-right: 2rem;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  .logo {
-    margin-left: 3em;
-  }
-  .about {
-    border-left: 2px solid white;
-    padding-left: 1em;
-  }
-
-  .services {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    padding: 0 1em;
-  }
-
-  .group {
-    border-right: 2px solid white;
-    padding-right: 1em;
-  }
-}
-
-@media (min-width: 1025px) {
-
-  header {
+  header{
     width: 100%;
-    max-width: 100%;
-    height: 730px;
-  }
-
-  .container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .about {
-    border-left: 2px solid white;
-    padding-left: 1em;
-  }
-
-  .services {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    padding: 0 1em;
-  }
-
-  .group {
-    border-right: 2px solid white;
-    padding-right: 1em;
-  }
-
-  .scroll-key {
-    margin-top: 0.25%;
-    border: 3px solid orange;
-    margin-bottom: 0;
-  }
-
-  .scroll-key a {
-    font-size: 1.5rem;
-  }
-
+    height: 693px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery1.jpg');
+    background-size: cover;
 }
 
-@media (min-width: 2000px) {
-
-  header {
+  nav{
+    background: rgba(4, 9, 30, 0.85);
+    height: 80px;
     width: 100%;
-    max-width: 100%;
-    height: 1378px;
-  }
-  .container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 2rem;
+}
+
+  .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
-  nav ul {
-    display: flex;
-    flex-direction: row;
+  .trident {
+    color: orange;
   }
 
-  .logo {
-    margin-left: 2.5rem;
-    font-size: 1.5em;
+  .hydro {
+    color: cyan;
   }
 
-  .current {
-    padding: 0 1em;
+  nav ul{
+    float: right;
+    margin-right: 20px;
   }
 
-  .about {
-    border-left: 2px solid white;
-    padding: 0 1em;
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
   }
 
-  .services {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    padding: 0 1em;
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
-  .group {
-    border-right: 2px solid white;
-    padding: 0 1em;
+  a:hover{
+    color: cyan;
+    transition: .5s;
   }
 
-  .contacts {
-    padding-left: 1em;
+  a.active {
+    text-decoration: underline orange;
   }
+
+  .checkbtn{
+    font-size: 30px;
+    color: cyan;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .checkbtn:hover {
+    color: orange;
+  }
+
+  #check{
+    display: none;
+  }
+
+    /* Query for NAVIGATION BAR */
+
+@media (max-width: 952px){
+    .logo {
+        font-size: 1.5rem;
+        padding-left: 50px;
+     }
+     
+    nav ul li a {
+        font-size: 16px;
+     }
+    }
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(4, 9, 30, 0.75);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    }
+
+    @media (min-width: 2000px) {
+
+    nav {
+        font-size: 2.5rem;
+        padding-right: 5rem;
+    }
+
+    .logo {
+        padding-left: 5rem;
+        font-size: 2.5rem;
+    }
+
+    }
+
+  /* Introductory Paragraph */
 
   .intro {
     text-align: center;
-    padding: 15% 2em;
+    margin: 0;
+    padding-top: 40%;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   
   .intro h1{
     margin-bottom: 0.5rem;
-    font-size: 2.5em;
   }
   
   .intro p {
-    font-size: 1.5em;
+    font-size: 1.125rem;
   }
   
   .engg {
@@ -302,22 +171,106 @@ nav a:hover {
   
   #intro-countries {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: orange;
-    margin-bottom: 1.75em;
-  }
-
-  .scroll-key {
-    margin-top: 10%;
-    border: 3px solid orange;
-    border-radius: 8px;
-  }
-
-  .scroll-key a {
-    font-size: 2.5rem;
   }
   
-}
+  .scroll-key {
+    margin-top: 40%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: orange;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+  }
+  
+  .scroll-key a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .scroll-key a:hover {
+    color: cyan;
+  }
+
+  /* Query for INTRODUCTORY PARAGRAPH */
+
+@media (min-width: 768px) {
+
+    header {
+        height: 620px;
+    }
+
+    .intro {
+        margin: 0;
+        padding-top: 20%;
+    }
+
+    .scroll-key {
+        margin-top: 25%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .intro {
+        padding-top: 15%;
+    }
+
+    .scroll-key {
+        margin-top: 10%;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+    }
+
+    #intro-countries {
+        font-size: 1.25em;
+    }
+
+  }
+
+  @media (min-width: 1400px){
+    header {
+      height: 729px;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    header {
+        height: 1378px;
+    }
+
+    .intro {
+        padding-top: 20%;
+        font-size: 3rem;
+    }
+
+    .intro p {
+        font-size: 3rem;
+    }
+
+    .scroll-key {
+        margin-top: 10%;
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    nav ul li a{
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+    }
+  }
 
 /* =============
       Content

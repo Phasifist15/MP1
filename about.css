@@ -1,133 +1,180 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+header{
+  width: 100%;
+  height: 550px;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery1.jpg');
+  background-size: cover;
+}
+
+nav{
+  background: rgba(4, 9, 30, 0.85);
+  height: 80px;
+  width: 100%;
+}
+
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trident {
+  color: orange;
+}
+
+.hydro {
+  color: cyan;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:hover{
+  color: cyan;
+  transition: .5s;
+}
+
+a.active {
+  text-decoration: underline orange;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: cyan;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbtn:hover {
+  color: orange;
+}
+
+#check{
+  display: none;
+}
+
+.about {
+  color: snow;
+  text-align: center;
+  margin-top: 25%;
+}
+
+  /* Query for NAVIGATION BAR */
+
+@media (max-width: 952px){
+
   header {
-    width: 100%;
-    max-width: 100%;
-    height: 550px;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)), url('images/refinery.jpg');
-    position: relative;
-    background-size: cover;
+    height: 300px;
   }
-  
-  /* Navigation Bar */
-  
-  .container-nav {
-    max-width: 100%;
-    padding-top: 1.5rem;
-    margin: 0 auto;
-  }
-  
   .logo {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  #logo1 {
-    text-decoration: none;
-  }
-  
-  #trident {
-    color: orange;
-  }
-  
-  #hydro {
-    color: cyan;
-  }
-  
-  .topnav {
-    margin-bottom: 0.5em;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.125em;
-    font-weight: bold;
-  }
-  
-  nav li {
-    padding: 0.5rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: solid;
-  }
-  
-  nav a:hover {
-    color: cyan;
-  }
-  
-  .current {
-    text-decoration: underline orange;
+      font-size: 1.5rem;
+      padding-left: 50px;
+   }
+   
+  nav ul li a {
+      font-size: 16px;
+   }
   }
 
-  .about-us {
-    text-align: center;
+@media (max-width: 858px){
+  .checkbtn {
+      display: block;
   }
 
-  .about {
-    margin-top: 10%;
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(4, 9, 30, 0.75);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
   }
 
-  .about h1 {
-    text-align: center;
-    font-size: 3.25rem;
-    color: snow;
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 20px;
+      text-align: center;
+      justify-content: space-between;
   }
 
-  /* Media Query for Header */
+  nav ul li a{
+      font-size: 20px;
+  }
 
-  @media (min-width: 769px) {
+  #check:checked ~ ul{
+      left: 0;
+  }
+
+  }
+
+  @media (min-width: 768px){
 
     header {
-      background-position: center;
+      height: 550px;
+    }
+    .about {
+      margin-top: 30%;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .about {
+      margin-top: 15%;
+    }
+  }
+
+  @media (min-width: 2000px) {
+
+    .about {
+      margin-top: 10%;
     }
 
-    .container {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding-bottom: 1em;
-    }
-
-    .container-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .topnav {
-      padding-right: 2rem;
-    }
-
-    nav ul {
-        display: flex;
+    nav {
+      font-size: 2.5rem;
+      padding-right: 5rem;
     }
 
     .logo {
-        margin-left: 3em;
-      }
-    .current {
-        border-left: 2px solid white;
-        padding-left: 1em;
+      padding-left: 5rem;
+      font-size: 2.5rem;
     }
-    
-    .services {
-        border-left: 2px solid white;
-        border-right: 2px solid white;
-        padding: 0 1em;
-      }
-    
-    .group {
-        border-right: 2px solid white;
-        padding-right: 1em;
-      }
-  }
+
+}
 
 
                 /* CONTENT */
@@ -169,22 +216,32 @@
 }
 
 @media (min-width: 769px) {
+
+  header {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .section1 {
     text-align: left;
     max-width: 100%;
   }
 
-  .wwa, .mission > img {
-    max-width: 535px;
-    max-height: 100%;
-    padding: 1.5em 1.5em;
+  .wwa img {
+    width: 90%;
+    height: 600px;
+    padding: 1.5em;
   }
 
-  .wwd, .vision > img {
-    width: 500px;
-    height: 300px;
-    align-items: center;
+  .wwd img {
+    width: 90%;
+    height: 500px;
     padding: 1rem;
+  }
+
+  .mission, .vision {
+    width: 90%;
+    height: 600px;
   }
 
   .content1, .content2, .content3, .content4{
@@ -198,7 +255,7 @@
   }
 
   .article-text {
-    max-width: 45%;
+    width: 90%;
     margin: 1rem;
     text-align: left;
     padding-bottom: 0;
@@ -208,7 +265,7 @@
 
 @media (min-width: 1025px) {
   .section1 {
-    max-width: 100%;
+    width: 100%;
   }
 
   .content1, .content2, .content3, .content4{
@@ -218,9 +275,10 @@
     padding-top: 1.5em;
   }
 
-  .wwa, .mission > img{
-    max-width: 700px;
-    max-height: 100%;
+  .wwa, .mission  img{
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
     padding-left: 1.5em;
   }
 
@@ -229,10 +287,10 @@
     margin-right: 0;
   }
 
-  .wwd, .vision > img {
-    max-width: 800px;
+  .wwd, .vision  img {
+    width: 100%;
+    max-width: 100%;
     height: 500px;
-    align-items: center;
     padding-right: 1.5em;
   }
 
