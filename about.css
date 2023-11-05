@@ -60,11 +60,11 @@
   }
   
   nav a:hover {
-    text-decoration: underline orange;
+    color: cyan;
   }
   
   .current {
-    color: cyan;
+    text-decoration: underline orange;
   }
 
   .about-us {

@@ -60,13 +60,12 @@
     font-weight: solid;
   }
   
-  nav a:hover {
-    text-decoration: underline orange;
-    
+  nav a:hover {   
+    color: cyan;
   }
   
   .current {
-    color: cyan;
+    text-decoration: underline orange;
   }
   
   .about-us {
@@ -255,6 +254,7 @@
   .submit:hover {
     background-color: cyan;
     transform: scale(1.2);
+    cursor: pointer;
   }
 
   @media (min-width: 768px) {

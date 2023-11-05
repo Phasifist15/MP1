@@ -18,7 +18,6 @@ header {
   max-width: 100%;
   padding-top: 1.5rem;
   margin: 0 auto;
-  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .logo {
@@ -60,13 +59,12 @@ nav a {
   font-weight: solid;
 }
 
-nav a:hover {
-  text-decoration: underline orange;
-  
+nav a:hover {  
+  color: cyan;
 }
 
 .current {
-  color: cyan;
+  text-decoration: underline orange;
 }
 
 .about-us {
@@ -216,5 +214,4 @@ nav a:hover {
       padding-bottom: 1.5rem;
       font-size: 2rem;
     }
-  }
   }
