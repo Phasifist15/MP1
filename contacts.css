@@ -11,7 +11,7 @@
 header{
   width: 100%;
   height: 550px;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery1.jpg');
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/refinery.jpg');
   background-size: cover;
 }
 

@@ -278,7 +278,7 @@
 
   /* Cards for Products and Services */
 
-.title{
+  .title{
   text-align: center;
   margin: 2rem auto;
 }
@@ -364,6 +364,14 @@
   border-radius: 8px;
 }
 
+.catalog-services a:active, .catalog-services a:visited {
+  color: orange;
+}
+
+.catalog-services a:hover {
+  color: cyan;
+}
+
 .services-title1, .services-title2, .services-title3 {
   padding: 0;
   display: flex;
@@ -388,6 +396,7 @@
   font-size: 1.25rem;
   color: rgb(45, 41, 41);
   font-weight: bold;
+  color: cyan;
 }
 
 .here a:hover {
