@@ -148,7 +148,7 @@ a.active {
       height: 550px;
     }
     .group {
-      margin-top: 30%;
+      margin-top: 25%;
     }
   }
 
@@ -175,6 +175,8 @@ a.active {
     }
 
 }
+
+          /* CONTENT */
   
 section {
   width: 100%;
@@ -182,13 +184,12 @@ section {
 }
 
 .branches {
-  display: block;
   padding: 2rem;
 }
 
 .branches-img {
   width: 100%;
-  height: 350px;
+  height: 250px;
 }
 
 .branches-description h1 {
@@ -200,6 +201,41 @@ section {
 .branches-description p {
   color: snow;
   padding-top: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .branches-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .branches h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1000px) {
+
+ .branches {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .branches-img {
+    width: 600px;
+    height: 420px;
+  }
+
+  #singapore, #vietnam, #thailand > p {
+    padding-left: 2rem;
+  }
+
+  #malaysia, #indonesia, #brunei {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
 }
   
   /* =============
