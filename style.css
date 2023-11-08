@@ -342,13 +342,17 @@
   cursor: pointer;
 }
 
+.read-more:visited, .read-more a:link {
+  color: orange;
+}
+
 .read-more:hover {
   color: cyan;
 }
 
-.read-more a:active, .read-more a:visited, .read-more a:link {
-  color: orange;
-}
+  .read-more:active {
+    color: orange;
+  }
 
 /* Card 2 */
 
