@@ -200,6 +200,11 @@ section {
   font-weight: bold;
 }
 
+.read-more button:hover button{
+  color: cyan;
+  cursor: pointer;
+}
+
 .read-more a:active, .read-more a:visited {
   color: orange;
 }
@@ -216,11 +221,6 @@ section {
   width: 100%;
   border-bottom: 3px solid orange;
   border-width: 100%;
-}
-
-.product-card .read-more:hover {
-  color: cyan;
-  /* cursor: pointer; */
 }
 
 .card-exchanger1 {
