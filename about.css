@@ -183,20 +183,22 @@ a.active {
   max-width: 100%;
   justify-content: space-between;
   text-align: center;
-  background-color: rgba(45, 41, 41, 0.95);
+  background-color: rgba(4, 9, 30, 0.9);
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .article h2, p {
-  padding: 1rem 0;
+  padding: 1rem;
   color: snow;
 }
 
 .content1, .content2, .content3{
+  width: 100%;
   padding-bottom: 1.5em;
-  border-bottom: 2px solid rgb(101, 96, 96);
+  border-bottom: 2px solid orange;
   margin-bottom: 0;
+  border-width: 100%;
 }
 
 .content4 {
@@ -227,21 +229,13 @@ a.active {
     max-width: 100%;
   }
 
-  .wwa img {
+  .content-img {
     width: 90%;
-    height: 600px;
-    padding: 1.5em;
-  }
-
-  .wwd img {
-    width: 90%;
-    height: 500px;
-    padding: 1rem;
-  }
-
-  .mission, .vision {
-    width: 90%;
-    height: 600px;
+    height: 330.66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
   }
 
   .content1, .content2, .content3, .content4{
@@ -268,32 +262,63 @@ a.active {
     width: 100%;
   }
 
+  .content-img {
+    width: 50%;
+    padding-top: 1.5em;
+  }
+
   .content1, .content2, .content3, .content4{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.5em;
   }
 
-  .wwa, .mission  img{
-    width: 100%;
+  .article-text h2 {
+    font-size: 2rem;
+  }
+
+  .article-text p {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .about {
+    font-size: 2rem;
+  }
+
+  .content-img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .about {
+    font-size: 3rem;
+    margin-top: 8%;
+  }
+  .content1, .content2, .content3, .content4 {
+    padding: 4rem;
+  }
+  .article-text {
+    width: 70%;
+  }
+  .article-text h2 {
+    font-size: 3rem;
+  }
+  .article-text p {
+    font-size: 2.5rem;
+  }
+  .content-img {
     max-width: 100%;
-    height: 600px;
-    padding-left: 1.5em;
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  .content2 .article-text {
-    padding-right: 0;
-    margin-right: 0;
-  }
-
-  .wwd, .vision  img {
-    width: 100%;
-    max-width: 100%;
-    height: 500px;
-    padding-right: 1.5em;
-  }
-
 }
 
 
