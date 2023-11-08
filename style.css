@@ -346,7 +346,7 @@
   color: cyan;
 }
 
-.read-more:active {
+.read-more a:active, .read-more a:visited, .read-more a:link {
   color: orange;
 }
 
