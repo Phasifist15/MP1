@@ -335,6 +335,10 @@
   color: cyan;
 }
 
+.read-more:active {
+  color: orange;
+}
+
 /* Card 2 */
 
 .catalog-services2:hover .catalog-services-title {
