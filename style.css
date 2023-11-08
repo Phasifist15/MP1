@@ -400,7 +400,7 @@
   font-size: 1.25rem;
   color: rgb(45, 41, 41);
   font-weight: bold;
-  color: cyan;
+  color: rgb(45, 41, 41);
 }
 
 .here a:hover {
@@ -438,9 +438,6 @@
 
   .catalog-services1, .catalog-services2, .catalog-services3 {
     height: 400px;
-  }
-
-  .catalog-services-title {
   }
 
   .read-more {

@@ -214,6 +214,10 @@ section {
     color: cyan;
 }
 
+.return a:active, .return a:visited {
+  color: orange;
+}
+
 @media (min-width: 769px) {
 
     .exchanger p {

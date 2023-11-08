@@ -205,6 +205,10 @@ section {
   cursor: pointer;
 }
 
+.read-more a:active, .read-more a:visited {
+  color: orange;
+}
+
 
 /* PRODUCTS */
 #products-title {
