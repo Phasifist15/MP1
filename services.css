@@ -377,6 +377,10 @@ section {
     width: 50%;
     height: 300px;
   }
+  .card-services2:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 
