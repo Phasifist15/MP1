@@ -161,7 +161,8 @@
     @media (min-width: 2000px) {
   
       .services {
-        margin-top: 10%;
+        margin-top: 8%;
+        font-size: 2.5rem;
       }
   
       nav {
@@ -211,6 +212,32 @@ section {
 
 #return-button:hover {
     color: cyan;
+}
+
+@media (min-width: 769px) {
+
+    .exchanger p {
+        font-size: 1.3rem;
+    }
+
+    .exchanger #exchanger-img {
+        width: 30%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .exchanger p {
+        font-size: 2.4rem;
+    }
+
+    .exchanger #exchanger-img {
+        width: 30%;
+    }
+
+    .return #return-button {
+        font-size: 2.5rem;
+    }
 }
 
 /* =============
