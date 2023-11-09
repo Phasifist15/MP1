@@ -200,7 +200,7 @@ section {
   font-weight: bold;
 }
 
-.read-more a:link, .read-more a:visited {
+.read-more a:visited {
   color: orange;
 }
 
