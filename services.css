@@ -200,12 +200,16 @@ section {
   font-weight: bold;
 }
 
+.read-more a:link, .read-more a:visited {
+  color: orange;
+}
+
 .read-more button:hover button{
   color: cyan;
   cursor: pointer;
 }
 
-.read-more a:active, .read-more a:visited {
+.read-more a:active {
   color: orange;
 }
 
@@ -418,8 +422,6 @@ section {
 .scroll-top:hover {
   background-color: rgba(4, 9, 30, 0.85);
 }
-
-
 
 /* MEDIA QUERY FOR SERVICES */
 
