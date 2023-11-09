@@ -398,6 +398,29 @@ section {
   text-align: center;
 }
 
+.scroll-top {
+  display: block;
+  float: right;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  background: rgb(251, 251, 251, 0.2);
+  font-size: 2.25rem;
+  opacity: 1px;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.scroll-top i {
+  color: orange;
+  opacity: 0.3;
+}
+
+.scroll-top:hover {
+  background-color: rgba(4, 9, 30, 0.85);
+}
+
+
+
 /* MEDIA QUERY FOR SERVICES */
 
 @media (min-width: 425px) {

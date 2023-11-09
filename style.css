@@ -430,6 +430,27 @@
   color: cyan;
 }
 
+.scroll-top {
+  display: inline-block;
+  float: right;
+  padding: 0.5rem;
+  position: relative;
+  margin-right: 0.5rem;
+  background: rgb(251, 251, 251, 0.2);
+  font-size: 2.25rem;
+  opacity: 1px;
+  border-radius: 5px;
+}
+
+.scroll-top i {
+  color: orange;
+  opacity: 0.3;
+}
+
+.scroll-top:hover {
+  background-color: rgba(4, 9, 30, 0.85);
+}
+
 /* Media Queries for Catalogue of Services */
 
 @media (min-width: 768px) {
